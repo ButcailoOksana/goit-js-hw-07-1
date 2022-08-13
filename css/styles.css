@@ -42,3 +42,14 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
+
+
+.active {
+  padding: 8px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.lightbox {
+  padding: 4px;
+  background-color: rgba(255, 192, 203, 0.58);
+}
