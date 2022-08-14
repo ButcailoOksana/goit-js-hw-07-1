@@ -18,7 +18,8 @@ galleryEl.addEventListener("click", onOpenImg);
 function createMarkup(galleryItems) {
   return galleryItems
     .map(({ preview, original, description }) => {
-      return `<div class ="gallery__item">
+      return `
+      <li class "gallery__list">
  		<a class ="gallery__link" href ="${original}">
 		<img class ="gallery__image"
  		src ="${preview}"
@@ -26,7 +27,8 @@ function createMarkup(galleryItems) {
  		alt =${description};
  		/>
 		</a>
- 		</div>`;
+    </li>
+ 		`;
     })
     .join("");
 }
